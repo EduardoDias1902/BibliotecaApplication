@@ -26,6 +26,13 @@ public class Emprestimo {
         this.dataDevolucao = dataDevolucao;
     }
 
+    public Emprestimo(Long livroId, Long usuarioId, LocalDate dataEmprestimo, LocalDate dataDevolucao) {
+        this.livroId = livroId;
+        this.usuarioId = usuarioId;
+        this.dataEmprestimo = dataEmprestimo;
+        this.dataDevolucao = dataDevolucao;
+    }
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
